@@ -18,6 +18,7 @@ import android.widget.RelativeLayout;
 public class MainActivity extends Activity {
     //I am going to make some change
     //Try to make another change
+    //master make some changes
 	private String pass;
 	// Hello, this is the change made by yiou
 	public final String TAG = MainActivity.class.getSimpleName();
