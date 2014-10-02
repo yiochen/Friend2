@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- to make a empty view for listView, we need to make two views in the XML file -->
+    <!-- and have the empty one be android:id="@android:id/empty" -->
+    <!-- the list one be android:id="@android:id/list" -->
+
+    <RelativeLayout
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/design2" >
+
+        <TextView
+            android:id="@+id/empty_list_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/empty_list"
+            android:textColor="#CCCCCC"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/new_diary_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+           android:layout_below="@id/empty_list_text_view"
+            android:background="@drawable/round_button"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/new_diary_button"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:divider="@drawable/divider">
+    </ListView>
+
+</FrameLayout>

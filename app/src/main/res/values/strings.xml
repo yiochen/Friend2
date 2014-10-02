@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Friend</string>
+    <string name="description">An app to record your best memories</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="add_diary">Add Diary</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- string used for main menu -->
+
+	<string name="title_main_menu">Diary List</string>
+    <string name="empty_list">No diary yet. create one?</string>
+    <string name="new_diary_button">New diary</string>
+    <string name="main_menu_title">Friend</string>
+    <string name="delete_diary">Delete</string>
+    
+    <!-- string used for new diary -->
+    <string name="title_new_diary">New Diary</string>
+    
+    <!--  string used for view diary -->
+    <string name="title_view_diary">View Diary</string>
+   
+    <!-- string used for choose selfie -->
+    <string name="title_choose_selfie">Choose Selfie</string>
+    
+    
+</resources>
