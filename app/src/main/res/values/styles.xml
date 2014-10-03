@@ -17,6 +17,7 @@
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <item name="android:actionBarStyle">@style/ActionBarTheme</item>
+        <item name="android:actionModeStyle">@style/ActionBarTheme</item>
         <item name="android:windowActionBarOverlay">true</item>
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
