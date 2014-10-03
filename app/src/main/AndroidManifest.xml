@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="yiou.yuzhe.yeseul.androiddiaryapp"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0">
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -12,10 +12,10 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,20 +24,16 @@
         </activity>
         <activity
             android:name=".NewDiaryActivity"
-            android:label="@string/title_new_diary" >
-        </activity>
+            android:label="@string/title_new_diary"></activity>
         <activity
             android:name=".ChooseSelfie"
-            android:label="@string/title_choose_selfie" >
-        </activity>
+            android:label="@string/title_choose_selfie"></activity>
         <activity
             android:name=".MainMenuActivity"
-            android:label="@string/title_main_menu" >
-        </activity>
+            android:label="@string/title_main_menu"></activity>
         <activity
             android:name=".ViewDiaryActivity"
-            android:label="@string/title_view_diary" >
-        </activity>
+            android:label="@string/title_view_diary"></activity>
     </application>
 
 </manifest>

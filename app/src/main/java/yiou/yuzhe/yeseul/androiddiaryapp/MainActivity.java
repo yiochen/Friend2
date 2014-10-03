@@ -16,26 +16,14 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 public class MainActivity extends Activity {
-    //I am going to make some change
-    //Try to make another change
-    //master make some changes
-	private String pass;
-	// Hello, this is the change made by yiou
-	public final String TAG = MainActivity.class.getSimpleName();
 
-	// yuzhe's change
+	private String pass;
+	public final String TAG = this.getClass().getName();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// default methods
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
-		// wiring the default background layout
-		RelativeLayout l = (RelativeLayout) findViewById(R.id.bg_layout);
-		// set the background image
-		//l.setBackgroundResource(R.drawable.bg);
-		// wiring the image view
 		ImageView image = (ImageView) findViewById(R.id.profilePic);
 		// set image view
 		//image.setImageResource(R.drawable.default_profile);
