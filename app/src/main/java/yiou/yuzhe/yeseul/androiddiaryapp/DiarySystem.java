@@ -4,8 +4,12 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 import android.content.Context;
+import android.util.Log;
+
+import org.json.JSONException;
 
 public class DiarySystem {
+    private static final String TAG="DiarySystem";
 	private ArrayList<Diary> mDiaries;
 	private static DiarySystem sDiarySystem;
 	private Context mAppContext;
@@ -15,7 +19,12 @@ public class DiarySystem {
 	private DiarySystem(Context appContext) {
 		mAppContext=appContext;
 		mSerializer=new DiaryJSONSerializer(mAppContext, FILENAME);
-		mDiaries=new ArrayList<Diary>();
+		try{
+            mDiaries=mSerializer.loadDiary();
+        }catch(Exception e){
+            mDiaries=new ArrayList<Diary>();
+            Log.e(TAG, "Error loading diaries: ", e);
+        }
 	}
 	
 	public static DiarySystem get(Context c){
