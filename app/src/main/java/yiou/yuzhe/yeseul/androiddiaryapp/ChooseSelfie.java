@@ -25,8 +25,6 @@ public class ChooseSelfie extends Activity {
 		g.setOnItemClickListener(new OnItemClickListener(){
 			public void onItemClick(AdapterView<?> parent, View v, int pos, long id)
 			{
-				//do stuff here
-				Toast.makeText(ChooseSelfie.this, "" + pos,  Toast.LENGTH_SHORT).show();
 				Intent intent=new Intent();
 				intent.putExtra(PICK_SELFIE, GridAdapter.mThumbIds[pos]);
 				setResult(RESULT_OK,intent);
